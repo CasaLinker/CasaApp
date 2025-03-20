@@ -1,0 +1,49 @@
+/* Hamburger Menu Styling */
+#hamburger-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#hamburger-menu.open {
+    display: block;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: #333;
+    color: #fff;
+}
+
+body.dark-mode #hamburger-menu {
+    background: #444;
+    color: #fff;
+    border-color: #555;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    #hamburger-button {
+        display: none;
+    }
+    #hamburger-menu {
+        display: block;
+        position: static;
+        border: none;
+        padding: 0;
+    }
+}
