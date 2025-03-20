@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fb;
+    color: #2a2a2a;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+}
+
+.container {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Content Div Positioning */
+#content {
+    position: relative; /* Ensure absolute elements inside are positioned correctly */
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+    color: #ffffff !important; /* White text for visibility on dark background */
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #ffd700 !important; /* Gold on hover for contrast */
+}
+
+/* Dashboard Styles */
+.text-center {
+    padding: 50px 20px;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    color: #2a5298 !important; /* Dark blue for heading */
+}
+
+.lead {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #2a2a2a !important; /* Dark gray for paragraph */
+}
+
+/* Button and Dropdown Styles */
+.btn-primary {
+    background: #2a5298;
+    border: none;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #1e3c72;
+}
+
+.dropdown-menu {
+    background: #ffffff;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item:hover {
+    background: #f4f7fb;
+    color: #2a5298;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .container {
+        padding: 15px;
+    }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background: linear-gradient(90deg, #0f1e38, #1a3260) !important;
+}
+
+body.dark-mode .nav-link {
+    color: #d3d3d3 !important;
+}
+
+body.dark-mode .nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* Additional Styles */
+.dashboard-hero {
+    background: url('zambia-hero.jpg') no-repeat center;
+    background-size: cover;
+    padding: 60px 20px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn-secondary {
+    background: #d9534f;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background: #c9302c;
+}
+
+/* Mortgage Form Styles */
+#mortgage-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+#mortgage-form .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+#mortgage-form .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+}
+
+#mortgage-form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #28a745;
+    margin-top: 20px;
+}
+
+/* Neighborhoods List Styles */
+#neighborhoods-list .card {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+#neighborhoods-list .card:hover {
+    transform: translateY(-5px);
+}
+
+#neighborhoods-list .card-title {
+    font-weight: bold;
+    color: #007bff;
+}
+
+#neighborhoods-list .card-text {
+    color: #666;
+}
+
+#neighborhoods-list .col-md-4 {
+    padding: 10px;
+}
+
+/* Review Form Styles */
+#review-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+#review-form .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+#review-form .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+}
+
+#review-form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.review {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.review h5 {
+    margin: 0;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.review p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Social and Legal Links */
+.social-links a {
+    color: #007bff; /* Blue color for icons */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.social-links i {
+    margin: 0 10px; /* Space between icons */
+}
+
+.legal-links a {
+    color: #6c757d; /* Gray color for links */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.legal-links a:hover {
+    color: #007bff; /* Blue on hover */
+    text-decoration: underline;
+}
+
+.legal-links i {
+    margin-right: 5px;
+}

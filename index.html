@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasaLink - Your Home in Zambia</title>
+    <!-- Favicon links including .ico and additional sizes -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <meta name="description" content="Find your dream home in Zambia with CasaLink – the best platform for buying, selling, and renting properties.">
+    <meta name="keywords" content="Zambia housing, real estate, property rentals, buy house Zambia, Lusaka properties">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient" style="background: linear-gradient(90deg, #1e3c72, #2a5298);">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">CasaLink</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('dashboard')" aria-label="Go to Dashboard">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('auth')" aria-label="Go to Login">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('search')" aria-label="Go to Search">Search</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('listings')" aria-label="Go to Listings">Listings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('profile')" aria-label="Go to Profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('settings')" aria-label="Go to Settings">Settings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('messages')" aria-label="Go to Messages">Messages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('mortgage')" aria-label="Go to Mortgage Calculator">Mortgage Calculator</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('neighborhoods')" aria-label="Go to Neighborhood Guides">Neighborhood Guides</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('reviews')" aria-label="Go to Reviews">Reviews</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="content" class="container mt-5">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="spinner-border text-primary me-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p>Loading CasaLink...</p>
+        </div>
+    </div>
+
+    <!-- Updated Google Maps script without API key -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=drawing,geometry&loading=async"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./CasaLink.js" type="module"></script>
+</body>
+</html>
