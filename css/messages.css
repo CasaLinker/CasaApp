@@ -1,0 +1,44 @@
+.message {
+    margin-bottom: 10px;
+}
+.message.sent {
+    text-align: right;
+}
+.message.received {
+    text-align: left;
+}
+.message p {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+.message.sent p {
+    background-color: #dcf8c6;
+}
+.message.received p {
+    background-color: #f1f0f0;
+}
+.message small {
+    display: block;
+    margin-top: 5px;
+    color: #888;
+}
+.chat-window .card {
+    border-radius: 15px;
+}
+.chat-window .card-body {
+    height: 400px;
+    overflow-y: auto;
+    background: #fafafa;
+}
+
+@media (max-width: 768px) {
+    .conversation-list {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+    .chat-window .card-body {
+        height: 300px;
+    }
+}
