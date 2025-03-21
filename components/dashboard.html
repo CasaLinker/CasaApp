@@ -1,0 +1,60 @@
+<!-- Hamburger Menu Button -->
+<button id="hamburger-button">☰</button>
+
+<!-- Hamburger Menu Content (initially hidden) -->
+<nav id="hamburger-menu" class="hamburger-menu">
+    <input type="text" placeholder="Search menu..." id="menu-search" oninput="filterMenuItems(this.value)">
+    <ul>
+        <li><button onclick="loadSection('search')" data-bs-toggle="tooltip" title="Find your dream home">Search Properties</button></li>
+        <li><button onclick="loadSection('listings')" data-bs-toggle="tooltip" title="Browse available properties">View Listings</button></li>
+        <li><button onclick="loadSection('profile')" data-bs-toggle="tooltip" title="Manage your account">Your Profile</button></li>
+        <li><button onclick="loadSection('messages')" data-bs-toggle="tooltip" title="Check your inbox">Messages</button></li>
+        <li><button onclick="loadSection('settings')" data-bs-toggle="tooltip" title="Customize your experience">Settings</button></li>
+    </ul>
+</nav>
+
+<!-- Featured Property Carousel Section -->
+<div class="dashboard-hero">
+    <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/property1.jpg" class="d-block w-100" alt="Featured Property 1" loading="lazy">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/property2.jpg" class="d-block w-100" alt="Featured Property 2" loading="lazy">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- Dashboard Content -->
+<div class="text-center">
+    <h2 class="display-4">Welcome back, <span id="user-name">Guest</span>!</h2>
+    <p class="lead">Embark on a journey to find your dream home in Zambia – where every corner holds a story, and every listing is a new adventure waiting for you!</p>
+    <button id="dark-mode-toggle" class="btn btn-secondary my-4">Toggle Dark Mode</button>
+</div>
+
+<!-- Footer with Social and Legal Links -->
+<footer class="my-4">
+    <div class="social-links text-center my-4">
+        <a href="https://facebook.com/casalink" target="_blank" class="mx-2" aria-label="Facebook">
+            <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="mailto:casalink@gmail.com" class="mx-2" aria-label="Email">
+            <i class="fas fa-envelope fa-2x"></i>
+        </a>
+    </div>
+    <div class="legal-links text-center my-4">
+        <a href="./components/terms.html" target="_blank" class="mx-2">Terms and Conditions</a> |
+        <a href="./components/privacy.html" target="_blank" class="mx-2">Privacy Policy</a> |
+        <a href="./components/disclaimer.html" target="_blank" class="mx-2">Disclaimer</a>
+    </div>
+</footer>
